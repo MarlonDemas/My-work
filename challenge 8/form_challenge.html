@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Survey</title>
+    <style>
+        .form {
+            margin-left: 30%;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align:center">Coffee Shop Online Survey</h1>
+    <div class="form">
+    <form>
+        <h2>Enter your details below</h2>
+        <p>
+            <label for="firstname">Name:</label>
+            <input type="text" name="firstname" placeholder="firstname" style="display:table-cell; margin-left:9%; width: 30%" required>
+        </p>
+        <p>
+            <label for="lastname">Surname:</label>
+            <input type="text" name="lastname" placeholder="surname" style="display:table-cell; margin-left:7%; width: 30%" required>
+        </p>
+        <p>
+            <label for="email">Email:</label>
+            <input type="email" name="email" placeholder="username@example.com" style="display:table-cell; margin-left: 9%; width: 30%" required>
+        </p>
+        <p>
+            <label for="number">Cell number:</label>
+            <input type="tel" name="number" placeholder="012 345 6789" style="display:table-cell; margin-left:5%; width: 30%" required>
+        </p>
+        <p>
+            <label for="gender">Gender:</label>
+            <select name="gender" style="margin-left:8%">
+                <option value="0">Select your gender</option>
+                <option value="1">Male</option>
+                <option value="2">Female</option>
+                <option value="3">Other</option>
+            </select>
+        </p>
+        <p>
+                <label for="date">Date of Birth:</label>
+                <input type="date" name="date" style="display:table-cell; margin-left:5%; width: 30%" required>
+        </p>
+        <p>
+                <label for="password">Password:</label>
+                <input type="password" name="password" placeholder="password" style="display:table-cell; margin-left:7%; width: 30%" required>
+        </p>
+    
+        <h2>Survey Questions</h2>
+        <ol>
+            <li>
+                <p>How often do you visit coffee shops?</p>
+            </li>
+            <p>
+                <input type="text" name="answer" style="display:table-cell; width:70%" required>
+            </p>
+            <li>
+                <p>What is your favourite coffee shop and where is it located?</p>
+            </li>
+            <p>
+                <input type="text" name="answer" style="display:table-cell; width:70%" required>
+            </p>
+            <li>
+                <p>What do you typically order to drink?</p>
+            </li>
+            <p>
+                <input type="text" name="answer" style="display:table-cell; width:70%" required>
+            </p>
+            <li>
+                <p>Do you prefer large, national chain coffee shops or small, privately owned coffee shops?</p>
+            </li>
+            <p>
+                <input type="text" name="answer" style="display:table-cell; width:70%" required>
+            </p>
+        </ol>
+        
+        <label for="comments">Please enter your comments in the textbox below</label>
+        <p>
+            <textarea name="comments" cols="50" rows="15" placeholder="Comments"></textarea>
+        </p>
+
+        <input type="submit" value="Send survey" style="margin-left:50%">
+        <input type="reset" value="Reset">
+    </form>
+    </div>
+</body>
+</html>
