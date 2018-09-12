@@ -7,7 +7,8 @@
     <title>Challenge 7</title>
 </head>
 <body>
-    <table border="1">
+    <h1>Nested tables using table within table</h1>
+    <table border="5" style="text-align: center; font-size: 50px">
         <tr>
             <td>1</td>
             <td>2</td>
@@ -15,32 +16,56 @@
         <tr>
             <td>3</td>
             <td>
-                <table border="1" style="background-color:yellow">
+                <table border="5" style="border-collapse:collapse">
                     <tr>
                         <td>
-                            <table border="1" style="background-color:orangered">
+                            <table border="5" style="border-collapse:collapse">
                                 <tr>
-                                    <td>4</td>
-                                    <td>5</td>
+                                    <td style="background-color:orangered">4</td>
+                                    <td style="background-color:orangered">5</td>
                                 </tr>
                                     
                                 <tr>
-                                    <td>7</td>
-                                    <td>8</td>
+                                    <td style="background-color:orangered">7</td>
+                                    <td style="background-color:orangered">8</td>
                                 </tr>
                             </table>
                         </td>
 
-                        <td>6</td>
+                        <td style="background-color:yellow">6</td>
                     </tr>
 
                     <tr>
-                        <td>9</td>
-                        <td>10</td>
+                        <td style="background-color:yellow">9</td>
+                        <td style="background-color:yellow">10</td>
                     </tr>
                 </table>
             </td>
         </tr>      
+    </table>
+
+    <br>
+    <br>
+    <h2>Nested table using span</h2>
+    <table border="5" style="text-align: center; font-size: 50px">
+        <tr>
+            <td>1</td>
+            <td colspan="3">2</td>
+        </tr>
+        <tr>
+            <td rowspan="3">3</td>
+            <td style="background-color:orangered">4</td>
+            <td style="background-color:orangered">5</td>
+            <td rowspan="2" style="background-color:yellow">6</td>
+        </tr>
+        <tr>
+            <td style="background-color:orangered">7</td>
+            <td style="background-color:orangered">8</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="background-color:yellow">9</td>
+            <td style="background-color:yellow">10</td>
+        </tr>
     </table>
 </body>
 </html>
