@@ -14,7 +14,7 @@
 <body>
     <h1 style="text-align:center">Coffee Shop Online Survey</h1>
     <div class="form">
-    <form>
+    <form method="post">
         <h2>Enter your details below</h2>
         <p>
             <label for="firstname">Name:</label>
@@ -56,7 +56,10 @@
                 <p>How often do you visit coffee shops?</p>
             </li>
             <p>
-                <input type="text" name="answer" style="display:table-cell; width:70%" required>
+                <input type="radio" name="often" value="Never">Never
+                <input type="radio" name="often" value="Seldom" style="margin-left: 10%">Seldomly
+                <input type="radio" name="often" value="Often" style="margin-left: 10%">Often
+                <input type="radio" name="often" value="Very_Often" style="margin-left: 10%">Very Often
             </p>
             <li>
                 <p>What is your favourite coffee shop and where is it located?</p>
@@ -81,6 +84,10 @@
         <label for="comments">Please enter your comments in the textbox below</label>
         <p>
             <textarea name="comments" cols="50" rows="15" placeholder="Comments"></textarea>
+        </p>
+        <p>
+            <label for="confirmation">Please check the box once you completed all the questions</label>
+            <input type="checkbox" name="confirmation" required>
         </p>
 
         <input type="submit" value="Send survey" style="margin-left:50%">
