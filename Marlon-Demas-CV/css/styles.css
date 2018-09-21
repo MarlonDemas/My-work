@@ -1,0 +1,60 @@
+header {
+    background: cadetblue;
+}
+
+header h1, h2 {
+    text-align: center;
+}
+
+header p {
+    display: block;
+    width: 30%;
+    margin: auto;
+    padding-bottom: 10px;
+}
+
+header img {
+    position: absolute;
+    top: 3%;
+    left: 10%;
+    border-radius: 50%;
+    width: 15%;
+    height: 30%;
+    transition: transform 1.5s;
+}
+
+header img:hover {
+    transform: scaleX(-1);
+}
+
+main{
+    display: block;
+    margin: 5% 5%;
+    float: left;
+}
+
+main h2 {
+    background-color: cadetblue;
+}
+
+.education {
+    display: table;
+}
+
+.tertiary {
+    display: block;
+    width: 30%;
+    float: left;
+    margin-right: 3%;
+}
+
+.secondary {
+    display: block;
+    width: 30%;
+    margin: auto;
+
+}
+
+.experience {
+    display: table;
+}
