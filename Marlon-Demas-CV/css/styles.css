@@ -1,9 +1,15 @@
+html {
+    scroll-behavior: smooth;
+}
+
 header {
     background: cadetblue;
+    margin-top: 45px;
 }
 
 header h1, h2 {
     text-align: center;
+    padding-top: 10px;
 }
 
 header p {
@@ -20,11 +26,11 @@ header:hover p {
 
 #myImage {
     position: absolute;
-    top: 3%;
+    top: 7%;
     left: 10%;
     border-radius: 50%;
-    width: 15%;
-    height: 230px;
+    width: 13%;
+    height: 190px;
     transition: transform 1.5s;
 }
 
@@ -35,7 +41,7 @@ header:hover p {
 .btn {
     background-color: cadetblue;
     border: none;
-    color: white;
+    color: black;
     padding: 12px 30px;
     cursor: pointer;
     font-size: 20px;
@@ -45,7 +51,8 @@ header:hover p {
   }
 
   .btn:hover {
-    background-color: RoyalBlue;
+    background-color: black;
+    color: cadetblue;
   }
 
 header input {
@@ -55,17 +62,49 @@ header input {
     background-color: cadetblue;
 }
 
+#navBar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: url(../img/nav5.jpg);
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    width: 98.9%;
+}
+
+#navBar li {
+    float: left;
+    padding: 10px 10%;
+}
+
+#navBar li a {
+    display: block;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+#navBar li:hover{
+    background-color: black;
+
+}
+#navBar li:hover a{
+    color: cadetblue;
+}
+
 main{
     display: table;
     margin: 5% 5%;
-    /* float: left; */
 }
 
 main h2 {
     background-color: cadetblue;
 }
 
-.education {
+#education {
     display: table;
 }
 
@@ -88,19 +127,19 @@ main h2 {
     margin-bottom: 5%;
 }
 
-.skills li {
+#skills li {
     list-style: none;
     display: inline;
 }
 
-.skills img {
+#skills img {
     width: 5%;
     height: 5%;
     margin-right:5%;
     transition: transform 2s, box-shadow 2s;
 }
 
-.skills img:hover {
+#skills img:hover {
     transform: rotate(360deg);
     box-shadow: 15px 15px 15px black; 
 }
@@ -134,5 +173,18 @@ footer {
 footer img {
     width: 30px;
     height: 30px;
-    padding: 0 25px;
+    padding: 0 25px 20px;
+    transition: 1s;
+}
+
+footer img:hover {
+    transform: scale(1.7);
+}
+
+footer a {
+    visibility: hidden;
+}
+
+footer:hover a {
+    visibility: visible;
 }
