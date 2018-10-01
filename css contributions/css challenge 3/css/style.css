@@ -15,22 +15,22 @@ body {
 }
 
 article {
-  width: 210mm;
-  height: 297mm;
+  width: 50%;
+  height: 150vh;
   margin: 20px auto;
   position: relative;
 }
 
 address {
   position: absolute;
-  bottom: 8mm;
-  right: 20mm;
+  bottom: 5%;
+  right: 10%;
 }
 
 h1 {
   position: absolute;
-  top: 12mm;
-  left: 20mm;
+  top: 8%;
+  left: 10%;
   width: 128px;
   height: 128px;
   font-size: 20px;
